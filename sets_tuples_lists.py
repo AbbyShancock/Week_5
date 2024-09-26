@@ -74,4 +74,12 @@ cars.remove("Volvo")
 print(f"The cars in the list are: {cars}") 
 print("Ford" in cars)
 
+for car in cars:
+    requestCar = input("Enter a car: ")
+    cars.append(requestCar)
+    print(f"The cars in the list are: {cars}")
+    if len(cars) > 10:
+        print("You have reached the maximum number of cars")
+        break
+
 
