@@ -52,34 +52,41 @@
 # print(fruits.index("apple")) #returns it to an index
 
 
-cars = ["Ford", "Volvo", "BMW"]
-print(f"The cars in the list are: {cars}") 
+# cars = ["Ford", "Volvo", "BMW"]
+# print(f"The cars in the list are: {cars}") 
 
 
-#add 4 new cars in the list
-cars.append("Honda")
-#print out the list of cars in an f_string
-#that says "The cars in the list are: "
-print(f"The cars in the list are: {cars}") # f string
+# #add 4 new cars in the list
+# cars.append("Honda")
+# #print out the list of cars in an f_string
+# #that says "The cars in the list are: "
+# print(f"The cars in the list are: {cars}") # f string
 
-#replace the 3rd element in the list with another car
-cars[2] = "Jeep"
-print(f"The cars in the list are: {cars}")
+# #replace the 3rd element in the list with another car
+# cars[2] = "Jeep"
+# print(f"The cars in the list are: {cars}")
 
-#insert a new car in the second position
-cars.insert(1, "ferrari")
-print(f"The cars in the list are: {cars}") 
-#remove the third element in the list
-cars.remove("Volvo")
-print(f"The cars in the list are: {cars}") 
-print("Ford" in cars)
+# #insert a new car in the second position
+# cars.insert(1, "ferrari")
+# print(f"The cars in the list are: {cars}") 
+# #remove the third element in the list
+# cars.remove("Volvo")
+# print(f"The cars in the list are: {cars}") 
+# print("Ford" in cars)
 
-for car in cars:
-    requestCar = input("Enter a car: ")
-    cars.append(requestCar)
-    print(f"The cars in the list are: {cars}")
-    if len(cars) > 10:
-        print("You have reached the maximum number of cars")
-        break
+# for car in cars:
+#     requestCar = input("Enter a car: ")
+#     cars.append(requestCar)
+#     print(f"The cars in the list are: {cars}")
+#     if len(cars) > 10:
+#         print("You have reached the maximum number of cars")
+#         break
+
+friends = ["Isabel", "Karla", "Betsy", "Valentino"]
+friends[3] = "Isabella"
+print(f"name of friends are: {friends}")
+friends[2] = "Vanessa"
+print(f"name of friends are: {friends}")
+
 
 
