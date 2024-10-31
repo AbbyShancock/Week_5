@@ -1,0 +1,137 @@
+#while loop = execute some code WHILE some condition remains true.
+
+#while loops and for loops are forms of iteration. iteration is the process of repeating or looping through
+#a set of steps or instructions to iterate the verb form of iteration. be careful of infinate loops
+#, they will crash your program and you will have to restart it. Infinate loops are loops that never end.
+
+
+
+# name = input("enter your name.")
+
+# while name == "":
+#     print("You did not enter your name.")
+#     name = input("Enter your name: ") # <--- if you cancel this part out, this creates an infinate loop, THEYA RE BAD YOUR COMPUTER WILL CRASH
+
+# #while will keep repeat as long as condition is met. (in this case, entering nothing)
+
+# print(f"Hello {name}")
+
+
+
+# age = int(input("Enter your age: "))
+
+# while age < 0:
+#     print("Age cant be negetive.")
+#     age = int(input("Enter your age: ")) #<--- if you cancel this part out, this creates an infinate loop, THEYA RE BAD YOUR COMPUTER WILL CRASH
+
+# print(f"You are {age} years old.")
+
+
+
+# food = input("Enter a food you like. (q to quit): ")
+
+# while not food == "q":
+#     print(f"You like {food}")
+#     food = input("Enter another food you like (q to quit)")
+
+# print("bye")
+
+# #will keep asking you to enter another food that you like until you type q
+
+
+
+# num = int(input("Enter a number 1-10: "))
+
+# while num < 1 or num > 10:
+#     print(f"{num} is not valid.")
+#     num = int(input("Enter a number 1-10: "))
+
+# print(f"Your number is {num}.")
+
+
+
+
+
+
+
+
+
+# for loops (more complex) = execute a block of code a fixed number of times.
+# You can iterate over a range, string, sequence, etc.
+
+
+# for x in range(1, 11, 2): #<--- x = all numbers 1-10 on each run. x is a counter. 2 means it skips each 2nd number
+#     print(x)
+
+# print('HAPPY NEW YEAR!')
+
+# #can do for x in reversed(range(1, 11, 2)):
+
+
+
+
+
+# credit_card = "1234-5678-9012-3456"
+
+# for x in credit_card:
+#     print(x)
+# #this gets every individual chatacter from creditcard.
+
+
+
+# for x in range(1, 21):
+#     if x == 13 or x == 15 or x == 19:
+#         break #or continue
+#     else:
+#         print(x)
+# # print every number 1-20 but skips over 13 (and 15 and 19). use the CONTINUE keyword to skip over these numbers.
+# # keyword BREAK stops the program, its done. only prints number 1-12.
+
+
+#challenge 1
+# horror_movies = ["The Exorcist","The Shining","The Conjuring","The Ring"]
+# #if the name is The Shining. print The Shining
+# #otherwise  print The Shining was not found! and print
+# # out the other names using a loop
+
+for movie in horror_movies:
+    if movie == "The Shining":
+        print("The Shining")
+    else:
+        print("The Shining was not found!")
+        print(movie)
+        break
+
+
+
+# # #challenge 2
+# #create a list of your favorite horror movie characters
+# #loop through the list of characters.
+# # if the name is Freddy Krueger, skip over it
+# # #otherwise, print out the name of the character.
+
+characters =["Chucky","Jason","Freddy Krueger","Ghostface"]
+
+for x in characters:
+     if x == "Freddy Krueger":
+         continue
+     else:
+         print(x)
+
+
+#challenge 3
+# create a list of your favorite horror movie monsterss.
+#loop through the list of names
+# if the name is for example: "swamp thing", replace it with another name.
+#otherwiselmprint out the name of the monster.
+         
+horror_movie_monsters =["swamp thing","werewolf","ghost","vampire"]
+for monster in horror_movie_monsters:
+     if monster== "swamp thing":
+          horror_movie_monsters[0]: "Clown"
+          print(horror_movie_monsters)
+     else:
+          print(monster)
+        
+
+          
