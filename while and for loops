@@ -134,4 +134,46 @@ for monster in horror_movie_monsters:
           print(monster)
         
 
-          
+#problem 2
+#ask user for input
+start = input("Enter a number 1-30")
+for item in range (1, 31):
+    if item %2==0 and item >= 10:
+# #this is checking each num to see if its even or odd
+        print("Special even")
+    else: print("Special Odd")
+#this will print whether its even or odd
+
+
+
+
+#problem 1
+#The first thing that the user enters is an input for student score.
+student_score = int(input("Enter a list of students scores (one by one)"))
+#the while true evaluates the student score, assignes it to an if statments and will print Excellent, good, etc.
+while True:
+    if student_score >= 90 and student_score <= 100:
+        print("Excellent!")
+        
+    elif student_score >= 70 and student_score <= 89:
+        print("Good!")
+        
+
+    elif student_score >= 50 and student_score <= 69:
+        print("Pass")
+        
+
+    elif student_score >= 0 and student_score <= 49:
+        print("Fail")
+        
+
+    elif student_score <0:
+        print("You have entered a negative number. Goodbye")
+        break
+    student_score = int(input("Enter a list of students scores"))
+
+# if the while true evaluates that student score is negetive, its will break,
+#this will end the program.
+    
+#we write the last part student_score = int(input("Enter a list of students scores"))
+#so that the user can enter a new input after each print statment.          
